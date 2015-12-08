@@ -1,0 +1,170 @@
+\documentclass[]{friggeri-cv}
+\addbibresource{bibliography.bib}
+
+\begin{document}
+
+\header{Amiri }{Heni}{étudiant en 2\textsuperscript{éme} année stic}
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+Cité Elghazela
+Ariana 8122
+Tunis
+~
++216 (53) 748 801
+~
+\href{mailto:heni.amiri@gmail.com}{heni.amiri@gmail.com}
+\href{http://tn.linkedin.com/in/heniamiri}{linkedin://heni.amiri}
+\section{Languages}
+anglais: execllant
+francais: bilingue
+arabe: maternelle
+\section{Programmation}
+Rust (Primary Lang)
+Python, C/C++, Java
+Shell Scripting (ZSH/BASH), SQL \& Assembleur
+\section{Systèmes d'exploitations}
+GNU/Linux,Windows
+Unix(OpenBSD,FreeBSD)
+\section{Réseaux \& Services}
+GNS3, Packet Tracer
+Netfilter IPtables
+VPN, Apache,OpenSSL OpenSSH
+TCP/IP, IProute2
+Routage(OSPF, RIP)...
+\section{Bureautique}
+\LaTeX, LibreOffice
+Microsoft Office
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{formation}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2011--Now}
+{Licence {\normalfont appliqué en STIC}}
+{ISET'COM, Tunis}
+{Option: sécurité des réseaux informatiques}
+%------------------------------------------------
+\entry
+{2010--2011}
+{Baccalauréat {\normalfont en sciences expériemntales}}
+{Lycée Khmir, Tunis}
+{Mention bien}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{expérience}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2012--2013}
+{Société Nationale d’Exploitation et de Distribution des Eaux (SONEDE)}
+{Tunis}
+{\emph{Stage Technicien} \\
+Mise en place d’une infrastructure de supervision systéme "Open Source"\\
+Outils utilisés:
+\begin{itemize}
+\item \href{www.nagios.org/}{Nagios}:~Logiciel libre de surveillance des réseaux et systèmes.
+\item \href{https://www.snort.org/}{Snort}: Système de détection d'intrusion.
+\item \href{www.ntop.org/}{Ntop}: Analyseur de traffic réseau.
+\item \href {https://www.alienvault.com}{OSSIM}: Framework de "gestion de la sécurité de l’information"
+\end{itemize}}
+%------------------------------------------------
+\entry
+{2011--2012}
+{Tunisie Télécom}
+{Tunis}
+{\emph{Stage Ouvrier} \\
+Stage de découverte du milieu professionnel (Centre de Construction des Lignes)}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Project SECTION
+%----------------------------------------------------------------------------------------
+
+\section{projets}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2015}
+{Solution PAAS Open Source}
+{Communauté OpenStack, Tunis}
+{Création d’une solution PAAS (Plateform As A Service ) à base des conteneurs Linux (LXC/Docker) sur l’infrastructure de cloud computing libre OpenStack}
+\entry
+{2014}
+{Data Over Sound}
+{Projet Individuel}
+{Transmission de données entre deux ordinateurs par ultrasons}
+\entry
+{2014}
+{Mainteneur de paquet}
+{Communauté en ligne Archlinux}
+{Mainteneur de paquet du noyau Linux avec le patch \href{https://grsecurity.net/}{Grsecurity} dans la communauté Archlinux}
+\entry
+{2013}
+{Traducteurs Temps Réel}
+{Forum Social Mondial, Tunis}
+{Installation des traducteurs temps réel à base des cartes Raspberry PI pour les conférences au Forum Social Mondial 2013.}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+
+%------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{intérêt}
+
+\textbf{Professionnel:} Sécurité des applications Web, programmation systéme, ingenierie inverse, CTF (Capture The Flag), administration systéme, exploitation binaire, GNU/Linux, logiciels libres, virtualisation\ldots\\
+\textbf{Personnel:} Cinema, films, livres \& romans, philosophie, mythologie\ldots
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{publications}
+
+\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+
+\printbibsection{book}{books} % Print all books from the bibliography
+
+\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+\nocite{*}
+\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+\end{refsection}
+
+\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+\nocite{*}
+\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+\end{refsection}
+
+\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+
+\printbibsection{report}{research reports} % Print all research reports from the bibliography
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
